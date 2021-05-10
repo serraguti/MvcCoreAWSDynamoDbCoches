@@ -32,6 +32,15 @@
                 <input asp-for="VelocidadMaxima" class="form-control" />
                 <span asp-validation-for="VelocidadMaxima" class="text-danger"></span>
             </div>
+            <br />
+            <input type="checkbox" name="incluirmotor"
+                   value="yes" class="form-control" />Incluir motor
+            <label>Tipo de motor</label>
+            <input type="text" name="tipo" class="form-control" /><br />
+            <label>Caballos </label>
+            <input type="text" name="caballos" class="form-control" /><br />
+            <label>Cilindrada</label>
+            <input type="text" name="cilindrada" class="form-control" />
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

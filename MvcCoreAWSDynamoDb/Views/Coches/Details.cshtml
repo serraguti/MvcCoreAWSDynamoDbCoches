@@ -35,6 +35,15 @@
             @Html.DisplayFor(model => model.VelocidadMaxima)
         </dd>
     </dl>
+    <hr/>
+    @if (Model.Motor != null)
+    {
+        <h2 style="color:blue">
+            Tipo: @Model.Motor.Tipo,
+            Caballos: @Model.Motor.Caballos,
+            Cilindrada: @Model.Motor.Cilindrada
+        </h2>
+    }
 </div>
 <div>
     <a asp-action="Index">Back to List</a>
